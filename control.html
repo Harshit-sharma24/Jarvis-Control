@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jarvis Control</title>
+</head>
+<body style="text-align:center; font-family:sans-serif;">
+
+    <h1>Jarvis Control Panel 🤖</h1>
+
+    <button onclick="send('/chrome')">Open Chrome</button><br><br>
+    <button onclick="send('/music')">Play Music</button><br><br>
+    <button onclick="send('/shutdown')">Shutdown</button>
+
+    <script>
+        function send(path) {
+            fetch(path);
+        }
+    </script>
+
+</body>
+</html>
